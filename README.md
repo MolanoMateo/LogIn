@@ -8,6 +8,10 @@ Diagrama del sistema: https://udlaec-my.sharepoint.com/:i:/g/personal/mateo_mola
 
 El sistema del login al no tener tantas funcionalidades es facil de comprender, existe el usuario y los metodos a los que tiene acceso a travez del front end, por otra parte existe el cliente o pagina web donde tenemos toda la logica del sistema, la validacion del formato y el tipo de los datos que el usuario ingresa, lo realizamos tanto en el front end como en el back end. Por ultimo tenemos la conexion a la base de datos en firebase que nos permite mantener la persistencia de los datos, con este flujo de información comprobamos que el usuario no pueda acceder a la pagina de inicio sin que antes autentifique su identidad con sus credenciales.
 
+Credenciales quemadas:
+    Mail: mateo.molano@udla.edu.ec
+    password: 1234
+
 Instalación y ejecución de programa:
 npm install
 ng serve

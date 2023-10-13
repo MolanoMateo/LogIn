@@ -15,6 +15,7 @@ export class LoginService {
   constructor(private http: HttpClient) { }
 
   login(credentials:LoginRequest):Observable<User>{
+    /** conexion a la base de datos */
     return this.http.get<User>('././assets/data.json').pipe(
       tap( (userData: User) => {
         this.currentUserData.next(userData);
@@ -23,6 +24,16 @@ export class LoginService {
       catchError(this.handleError)
     );
   }
+/** 
+  register(credentials:registerRequest):Observable<User>{
+    conexion a la base de datos
+    return this.http.get<User>('././assets/data.json').pipe(
+      tap( (userData: User) => {
+        this.currentUserData.next(userData);
+        go to iniciar sesion
+      }),
+    );
+  }*/
 
   private handleError(error:HttpErrorResponse){
     if(error.status===0){
